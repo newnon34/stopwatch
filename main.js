@@ -1,6 +1,6 @@
-let startTime; //スタートボタンクリック時の時刻
+let startTime= 0; //スタートボタンクリック時の時刻
 let elapsedTime = 0; //経過時間
-let holdTime; //一時停止用に時間保持
+let holdTime = 0; //一時停止用に時間保持
 let timer; 
 
 let startButton
@@ -65,9 +65,7 @@ $(document).ready(function(){
 //時間計測
 function measureTime() {
   timer = setTimeout(function(){
-
-    elapsedTime = 0;
-    holdTime = 0;
+    
     showTime.textContent = "00:00:00.000";
     
     //経過時間を取得
