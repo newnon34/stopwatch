@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="main.css">
+        <title>ストップウォッチ</title>
+      </head>
+
+      <body>
+        <h3>ストップウォッチ</h3>
+
+        <!-- 時間表示-->
+         <div id="timerDisplay">
+           00:00:00.000
+         </div>
+
+        <!--操作ボタン-->
+       <div class="watch__button">
+        <button id="start" onclick="startTimer()">スタート</button>
+        <button id="stop" onclick="stopTimer()">ストップ</button>
+        <button id="reset" onclick="resetTimer()">リセット</button>
+       </div>
+
+        <script type="text/javascript" src="main.js" charset="utf-8"></script>
+      </body>
+    </html>

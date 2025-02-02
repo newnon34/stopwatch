@@ -1,0 +1,21 @@
+/*時間表示*/
+.time {
+    font-size: 30px;
+}
+
+/*操作ボタン*/
+.watch__button {
+    display: flex;
+    margin-top: 20px;
+    width: 500px;    /* ボタンの横幅 */
+    height: 30px;    /* ボタンの高さ */
+    font-size: 20px; /* テキストのサイズ */
+    padding: 8px;    /* 内側の余白 */
+    gap: 10px;
+}
+
+.watch__button:disabled {
+    background-color: #e0e0e0; /* グレーアウトした背景色 */
+    color: #a1a1a1;           /* グレーアウトした文字色 */
+    cursor: not-allowed;      /* 選択不可のポインター */
+}
